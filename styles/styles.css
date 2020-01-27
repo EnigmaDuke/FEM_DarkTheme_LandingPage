@@ -1,6 +1,15 @@
 /* Coolors Exported Palette - coolors.co/2e0219-4a001f-f59ca9-f6828c-e56399 */
 /* RGB */
 /*  Fonts */
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .container {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,10 +88,29 @@ header #landing p {
 }
 
 header #landing * {
-  margin: 30px 0;
+  margin: 30px;
 }
 
 #stay_productive img {
   width: 200px;
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .container {
+  text-align: center;
+  padding: 30px;
+}
+
+main .container i {
+  padding: 20px 0;
+}
+
+main .container * {
+  padding: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 @import "./palette.scss";
+@import "./main.scss";
 
 @function fonts($font){
 
@@ -91,7 +92,7 @@ header{
   }
 
   #landing *{
-    margin:30px 0;
+    margin:30px;
   }
 }
 
@@ -101,3 +102,22 @@ header{
   }
 }
 
+/* Main */
+
+main{
+  width:100%;
+  height:auto;
+
+  .container{
+    text-align: center;
+    padding:30px;
+    i{
+      padding:20px 0;
+      // color:;
+    }
+  }
+
+  .container *{
+    padding:10px 0;
+  }
+}
