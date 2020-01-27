@@ -1,12 +1,18 @@
 /* Coolors Exported Palette - coolors.co/2e0219-4a001f-f59ca9-f6828c-e56399 */
 /* RGB */
+/*  Fonts */
 * {
   margin: 0;
   padding: 0;
 }
 
-a {
+a, p {
   text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif;
 }
 
 header nav {

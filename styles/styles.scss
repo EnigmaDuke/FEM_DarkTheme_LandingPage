@@ -1,12 +1,23 @@
 @import "./palette.scss";
 
+@function fonts($font){
+
+  @return $font;
+}
+
+
 *{
   margin:0;
   padding:0;
 }
 
-a{
+a, p{
   text-decoration: none;
+  font-family: fonts($text);
+}
+
+h1, h2, h3{
+  font-family: fonts($headers);
 }
 
 // body{
