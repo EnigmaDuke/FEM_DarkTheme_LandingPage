@@ -160,22 +160,23 @@ main{
 }
 
 #secondary_grid{
+
   width:100%;
-  position: relative;
-
-  .fa-quote-left{
-  position: absolute;
-  left:21px;
-  top:-31px;
-  }
-
   article{
-    width:90%;
+    position: relative;
+    width:85%;
     height:auto;
     background-color:yellow;
     border:1px solid orange;
+    border-radius: 5px;
     margin:30px auto;
     padding:30px 20px;
+
+    .fa-quote-left{
+      position: absolute;
+      left:0;
+      top:-31px;
+      }
 
     p{
       font-size:0.9em;
@@ -189,6 +190,10 @@ main{
     
     div{
       margin:0;
+
+      p{
+        font-weight:bold;
+      }
       // float:left;
 
       .fa-user{
@@ -202,4 +207,30 @@ main{
       font-size:0.7em;
     }
   }
+}
+
+/* Email List */
+
+#email_list{
+  width:90%;
+  margin:0 auto;
+  border:1px solid orange;
+  border-radius:5px;
+  text-align:center;
+
+  h4{
+    font-size:1.2em;
+    padding:40px 0 15px;
+  }
+
+  input, button{
+    border-radius:25px;
+    padding:15px 90px;
+    margin:10px 0;
+    // border:none;
+  }
+fieldset{
+  border:none;
+  padding:15px 0 30px;
+}
 }

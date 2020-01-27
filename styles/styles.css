@@ -145,22 +145,23 @@ main .container * {
 
 #secondary_grid {
   width: 100%;
-  position: relative;
-}
-
-#secondary_grid .fa-quote-left {
-  position: absolute;
-  left: 21px;
-  top: -31px;
 }
 
 #secondary_grid article {
-  width: 90%;
+  position: relative;
+  width: 85%;
   height: auto;
   background-color: yellow;
   border: 1px solid orange;
+  border-radius: 5px;
   margin: 30px auto;
   padding: 30px 20px;
+}
+
+#secondary_grid article .fa-quote-left {
+  position: absolute;
+  left: 0;
+  top: -31px;
 }
 
 #secondary_grid article p {
@@ -179,6 +180,10 @@ main .container * {
   margin: 0;
 }
 
+#secondary_grid article div p {
+  font-weight: bold;
+}
+
 #secondary_grid article div .fa-user {
   border: 1px solid red;
   border-radius: 50%;
@@ -187,5 +192,30 @@ main .container * {
 
 #secondary_grid article time {
   font-size: 0.7em;
+}
+
+/* Email List */
+#email_list {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid orange;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#email_list h4 {
+  font-size: 1.2em;
+  padding: 40px 0 15px;
+}
+
+#email_list input, #email_list button {
+  border-radius: 25px;
+  padding: 15px 90px;
+  margin: 10px 0;
+}
+
+#email_list fieldset {
+  border: none;
+  padding: 15px 0 30px;
 }
 /*# sourceMappingURL=styles.css.map */
