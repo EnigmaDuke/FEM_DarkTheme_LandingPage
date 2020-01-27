@@ -213,7 +213,7 @@ main{
 
 #email_list{
   width:90%;
-  margin:0 auto;
+  margin:100px auto 50px auto;
   border:1px solid orange;
   border-radius:5px;
   text-align:center;
@@ -223,14 +223,36 @@ main{
     padding:40px 0 15px;
   }
 
+  p{
+    // width:95%;
+    margin:0 auto;
+    padding:0 30px;
+  }
+
   input, button{
-    border-radius:25px;
-    padding:15px 90px;
+    border-radius: 50px;
+
     margin:10px 0;
     // border:none;
+    font-size:1em;
+    word-spacing: 2px;
+
   }
+
+  input{
+    // padding:20px 90px;
+    width:330px;
+    padding:20px 10px;
+    text-align:left;
+    box-sizing: content-box;
+  }
+
+  button{
+    padding:20px 100px;
+  }
+
 fieldset{
   border:none;
-  padding:15px 0 30px;
+  padding:40px 0 30px;
 }
 }

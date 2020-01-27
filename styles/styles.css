@@ -197,7 +197,7 @@ main .container * {
 /* Email List */
 #email_list {
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto 50px auto;
   border: 1px solid orange;
   border-radius: 5px;
   text-align: center;
@@ -208,14 +208,32 @@ main .container * {
   padding: 40px 0 15px;
 }
 
+#email_list p {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 #email_list input, #email_list button {
-  border-radius: 25px;
-  padding: 15px 90px;
+  border-radius: 50px;
   margin: 10px 0;
+  font-size: 1em;
+  word-spacing: 2px;
+}
+
+#email_list input {
+  width: 330px;
+  padding: 20px 10px;
+  text-align: left;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+#email_list button {
+  padding: 20px 100px;
 }
 
 #email_list fieldset {
   border: none;
-  padding: 15px 0 30px;
+  padding: 40px 0 30px;
 }
 /*# sourceMappingURL=styles.css.map */
