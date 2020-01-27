@@ -1,4 +1,53 @@
+@import "./palette.scss";
+
 *{
   margin:0;
   padding:0;
 }
+
+a{
+  text-decoration: none;
+}
+
+// body{
+//   background-color:$bodyBkg;
+// }
+
+header{
+  nav{
+    padding:20px;
+
+    li{
+      display: inline;
+    }
+
+    #logo{
+      float:left;
+
+      li{
+        float:left;
+      }
+    }
+
+    // .fa-layer-group{
+
+    // }
+    
+    ul{
+      list-style-type: none;
+    }
+
+    ul:nth-child(2){
+      float:right;
+    }
+
+  }
+
+  .clear:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+

@@ -1,5 +1,41 @@
+/* Coolors Exported Palette - coolors.co/2e0219-4a001f-f59ca9-f6828c-e56399 */
+/* RGB */
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+  padding: 20px;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav #logo {
+  float: left;
+}
+
+header nav #logo li {
+  float: left;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul:nth-child(2) {
+  float: right;
+}
+
+header .clear:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /*# sourceMappingURL=styles.css.map */
