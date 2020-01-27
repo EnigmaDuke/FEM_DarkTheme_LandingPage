@@ -20,7 +20,7 @@ a, p{
   letter-spacing: 1px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family: fonts($headers);
 }
 
@@ -96,11 +96,6 @@ header{
   }
 }
 
-#stay_productive{
-  img{
-    width:200px;
-  }
-}
 
 /* Main */
 
@@ -120,4 +115,49 @@ main{
   .container *{
     padding:10px 0;
   }
+}
+
+/* Stay Productive */
+
+#stay_productive{
+  width:100%;
+  height:auto;
+
+  div:nth-child(1){
+    padding:50px 0 100px;
+
+    img{
+      width:400px;
+      margin:0 auto;
+      display: flex;
+      /* Display flex to center image */
+    }
+  
+    h4{
+      font-size: 1.2em;
+      text-align: center;
+      padding-bottom:10px;
+    }
+  
+    p{
+      margin:10px 0;
+    }
+  
+    a{
+      border-bottom: 2px solid red;
+      padding-bottom:7px;
+    }
+  
+    .fa-arrow-right{
+      border:1px solid red;
+      border-radius:50%;
+      padding:3px;
+    }
+  }
+
+  div{
+    width:90%;
+    margin:0 auto;
+  }
+
 }
