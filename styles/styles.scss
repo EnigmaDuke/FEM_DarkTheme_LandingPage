@@ -1,5 +1,4 @@
 @import "./palette.scss";
-@import "./main.scss";
 
 @function fonts($font){
 
@@ -29,15 +28,24 @@ a, p{
   text-decoration: none;
   font-family: fonts($text);
   letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+a:hover{
+  color:$button;
 }
 
 h1, h2, h3, h4{
   font-family: fonts($headers);
 }
 
-// body{
-//   background-color:$bodyBkg;
-// }
+body{
+  background-color:$bodyBkg;
+}
+
+.fa-layer-group, h1, h2, h3, h4, p, a, time{
+  color:$white;
+}
 
 header{
   width:100%;
@@ -84,9 +92,14 @@ header{
     bottom:35%;
 
     a{
-      border:1px solid red;
-      border-radius:25px;
-      padding:15px 90px;
+      border-radius:50px;
+      padding:20px 90px;
+      background-image:linear-gradient(to right, $icons, $button);
+      transition: all 0.5s;
+    }
+
+    a:hover{
+      color:$bodyBkg;
     }
 
     p{
@@ -110,9 +123,10 @@ main{
   .container{
     text-align: center;
     padding:30px;
+
     i{
       padding:20px 0;
-      // color:;
+      color:$icons;
     }
   }
 
@@ -147,16 +161,23 @@ main{
     }
   
     p{
-      margin:10px 0;
+      margin:10px 0 20px;
     }
   
     a{
-      border-bottom: 2px solid red;
-      padding-bottom:7px;
+      border-bottom: 2px solid $icons;
+      padding-bottom:10px;
+      margin-top:10px;
+      color:$icons;
+    }
+
+    a:hover{
+      color:$button;
     }
   
     .fa-arrow-right{
-      border:1px solid red;
+      background-color:$white;
+      color:$bodyBkg;
       border-radius:50%;
       padding:3px;
     }
@@ -170,8 +191,7 @@ main{
     position: relative;
     width:85%;
     height:auto;
-    background-color:yellow;
-    border:1px solid orange;
+    background-color:$secondaryBkg;
     border-radius: 5px;
     margin:30px auto;
     padding:30px 20px;
@@ -179,7 +199,8 @@ main{
     .fa-quote-left{
       position: absolute;
       left:0;
-      top:-31px;
+      top:-30px;
+      color:$icons;
       }
 
     p{
@@ -201,9 +222,10 @@ main{
       // float:left;
 
       .fa-user{
-        border:1px solid red;
+        border:1px solid $icons;
         border-radius:50%;
         padding:10px;
+        color:$icons;
       }
     }
     
@@ -218,7 +240,7 @@ main{
 #email_list{
   width:90%;
   margin:100px auto 50px auto;
-  border:1px solid orange;
+  background-color: $secondaryBkg;
   border-radius:5px;
   text-align:center;
 
@@ -237,22 +259,26 @@ main{
     border-radius: 50px;
 
     margin:10px 0;
-    // border:none;
+    border:none;
     font-size:1em;
     word-spacing: 2px;
 
   }
 
   input{
-    // padding:20px 90px;
-    width:330px;
-    padding:20px 10px;
+    width:310px;
+    padding:20px 20px;
     text-align:left;
     box-sizing: content-box;
+    background-color:$white;
   }
 
   button{
     padding:20px 100px;
+    background-image:linear-gradient(to right, $icons, $button);
+    transition: all 0.5s;
+    cursor:pointer;
+    color:white;
   }
 
   fieldset{
@@ -273,7 +299,6 @@ footer{
     padding-top:10px;
   }
 
-
   ul{
     list-style-type: none;
   }
@@ -288,19 +313,24 @@ footer{
     display: grid;
     grid-template-columns: 15% 85%;
     margin:10px 0;
+
+    i{
+      color:$icons;
+    }
+
   }
 
   .footer_links{
     margin:20px 0;
   }
 
-  #socials{
-    width:100%;
-    height:100px;
-    border:1px solid red;
+  // #socials{
+  //   width:100%;
+  //   height:100px;
+  //   border:1px solid red;
 
-    i{
-      color:#000;
-    }
-  }
+  //   i{
+  //     color:#000;
+  //   }
+  // }
 }

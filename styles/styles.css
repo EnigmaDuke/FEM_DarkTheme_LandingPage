@@ -13,10 +13,24 @@ a, p {
   text-decoration: none;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #f6828c;
 }
 
 h1, h2, h3, h4 {
   font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #2e0219;
+}
+
+.fa-layer-group, h1, h2, h3, h4, p, a, time {
+  color: #e2dccd;
 }
 
 header {
@@ -68,9 +82,16 @@ header #landing {
 }
 
 header #landing a {
-  border: 1px solid red;
-  border-radius: 25px;
-  padding: 15px 90px;
+  border-radius: 50px;
+  padding: 20px 90px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f59ca9), to(#f6828c));
+  background-image: linear-gradient(to right, #f59ca9, #f6828c);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header #landing a:hover {
+  color: #2e0219;
 }
 
 header #landing p {
@@ -95,6 +116,7 @@ main .container {
 
 main .container i {
   padding: 20px 0;
+  color: #f59ca9;
 }
 
 main .container * {
@@ -129,16 +151,23 @@ main .container * {
 }
 
 #stay_productive #prod_container p {
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 
 #stay_productive #prod_container a {
-  border-bottom: 2px solid red;
-  padding-bottom: 7px;
+  border-bottom: 2px solid #f59ca9;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  color: #f59ca9;
+}
+
+#stay_productive #prod_container a:hover {
+  color: #f6828c;
 }
 
 #stay_productive #prod_container .fa-arrow-right {
-  border: 1px solid red;
+  background-color: #e2dccd;
+  color: #2e0219;
   border-radius: 50%;
   padding: 3px;
 }
@@ -151,8 +180,7 @@ main .container * {
   position: relative;
   width: 85%;
   height: auto;
-  background-color: yellow;
-  border: 1px solid orange;
+  background-color: #4a001f;
   border-radius: 5px;
   margin: 30px auto;
   padding: 30px 20px;
@@ -161,7 +189,8 @@ main .container * {
 #secondary_grid article .fa-quote-left {
   position: absolute;
   left: 0;
-  top: -31px;
+  top: -30px;
+  color: #f59ca9;
 }
 
 #secondary_grid article p {
@@ -185,9 +214,10 @@ main .container * {
 }
 
 #secondary_grid article div .fa-user {
-  border: 1px solid red;
+  border: 1px solid #f59ca9;
   border-radius: 50%;
   padding: 10px;
+  color: #f59ca9;
 }
 
 #secondary_grid article time {
@@ -198,7 +228,7 @@ main .container * {
 #email_list {
   width: 90%;
   margin: 100px auto 50px auto;
-  border: 1px solid orange;
+  background-color: #4a001f;
   border-radius: 5px;
   text-align: center;
 }
@@ -216,20 +246,28 @@ main .container * {
 #email_list input, #email_list button {
   border-radius: 50px;
   margin: 10px 0;
+  border: none;
   font-size: 1em;
   word-spacing: 2px;
 }
 
 #email_list input {
-  width: 330px;
-  padding: 20px 10px;
+  width: 310px;
+  padding: 20px 20px;
   text-align: left;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  background-color: #e2dccd;
 }
 
 #email_list button {
   padding: 20px 100px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f59ca9), to(#f6828c));
+  background-image: linear-gradient(to right, #f59ca9, #f6828c);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
 }
 
 #email_list fieldset {
@@ -268,17 +306,11 @@ footer .footer_grid {
   margin: 10px 0;
 }
 
+footer .footer_grid i {
+  color: #f59ca9;
+}
+
 footer .footer_links {
   margin: 20px 0;
-}
-
-footer #socials {
-  width: 100%;
-  height: 100px;
-  border: 1px solid red;
-}
-
-footer #socials i {
-  color: #000;
 }
 /*# sourceMappingURL=styles.css.map */
