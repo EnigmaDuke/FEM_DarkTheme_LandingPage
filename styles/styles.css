@@ -160,11 +160,19 @@ main .container * {
   background-color: yellow;
   border: 1px solid orange;
   margin: 30px auto;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 #secondary_grid article p {
   font-size: 0.9em;
+}
+
+#secondary_grid article .third_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  padding: 30px 0 10px;
 }
 
 #secondary_grid article div {
@@ -175,5 +183,9 @@ main .container * {
   border: 1px solid red;
   border-radius: 50%;
   padding: 10px;
+}
+
+#secondary_grid article time {
+  font-size: 0.7em;
 }
 /*# sourceMappingURL=styles.css.map */

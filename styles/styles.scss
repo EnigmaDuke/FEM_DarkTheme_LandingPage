@@ -175,22 +175,31 @@ main{
     background-color:yellow;
     border:1px solid orange;
     margin:30px auto;
-    padding:20px;
+    padding:30px 20px;
 
     p{
       font-size:0.9em;
-      // padding-bottom: 10px;
     }
+
+    .third_grid{
+    display:grid;
+    grid-template-columns: 15% 85%;
+    padding:30px 0 10px;
+    }
+    
     div{
       margin:0;
-      // display:grid;
-      // grid-template-columns: ;
+      // float:left;
+
       .fa-user{
         border:1px solid red;
         border-radius:50%;
         padding:10px;
       }
     }
-
+    
+    time{
+      font-size:0.7em;
+    }
   }
 }
