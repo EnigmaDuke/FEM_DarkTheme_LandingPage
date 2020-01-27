@@ -1,15 +1,6 @@
 /* Coolors Exported Palette - coolors.co/2e0219-4a001f-f59ca9-f6828c-e56399 */
 /* RGB */
 /*  Fonts */
-main {
-  width: 100%;
-  height: auto;
-}
-
-main .container {
-  text-align: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -116,11 +107,13 @@ main .container * {
   height: auto;
 }
 
-#stay_productive div:nth-child(1) {
+#stay_productive #prod_container {
+  width: 90%;
+  margin: 0 auto;
   padding: 50px 0 100px;
 }
 
-#stay_productive div:nth-child(1) img {
+#stay_productive #prod_container img {
   width: 400px;
   margin: 0 auto;
   display: -webkit-box;
@@ -129,29 +122,58 @@ main .container * {
   /* Display flex to center image */
 }
 
-#stay_productive div:nth-child(1) h4 {
+#stay_productive #prod_container h4 {
   font-size: 1.2em;
   text-align: center;
   padding-bottom: 10px;
 }
 
-#stay_productive div:nth-child(1) p {
+#stay_productive #prod_container p {
   margin: 10px 0;
 }
 
-#stay_productive div:nth-child(1) a {
+#stay_productive #prod_container a {
   border-bottom: 2px solid red;
   padding-bottom: 7px;
 }
 
-#stay_productive div:nth-child(1) .fa-arrow-right {
+#stay_productive #prod_container .fa-arrow-right {
   border: 1px solid red;
   border-radius: 50%;
   padding: 3px;
 }
 
-#stay_productive div {
+#secondary_grid {
+  width: 100%;
+  position: relative;
+}
+
+#secondary_grid .fa-quote-left {
+  position: absolute;
+  left: 21px;
+  top: -31px;
+}
+
+#secondary_grid article {
   width: 90%;
-  margin: 0 auto;
+  height: auto;
+  background-color: yellow;
+  border: 1px solid orange;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#secondary_grid article p {
+  font-size: 0.9em;
+}
+
+#secondary_grid article div {
+  margin: 0;
+}
+
+#secondary_grid article div .fa-user {
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
