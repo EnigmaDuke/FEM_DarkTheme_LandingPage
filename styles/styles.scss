@@ -6,6 +6,17 @@
   @return $font;
 }
 
+@mixin logo_Float() {
+  
+  .logo{
+    float:left;
+
+    li{
+      float:left;
+      margin:0 5px;
+    }
+  }
+}
 
 *{
   margin:0;
@@ -40,14 +51,7 @@ header{
       display: inline;
     }
 
-    #logo{
-      float:left;
-
-      li{
-        float:left;
-        margin:0 5px;
-      }
-    }
+    @include logo_Float();
 
     // .fa-layer-group{
 
@@ -251,8 +255,52 @@ main{
     padding:20px 100px;
   }
 
-fieldset{
-  border:none;
-  padding:40px 0 30px;
+  fieldset{
+    border:none;
+    padding:40px 0 30px;
+  }
 }
+
+footer{
+  width:90%;
+  margin:0 auto;
+
+  h1{
+    font-size:3em;
+  }
+
+  .fa-layer-group{
+    padding-top:10px;
+  }
+
+
+  ul{
+    list-style-type: none;
+  }
+
+  #logo{
+  width:100%;
+  height:auto;
+  padding:10px 0 50px 10px;
+  }
+
+  .footer_grid{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin:10px 0;
+  }
+
+  .footer_links{
+    margin:20px 0;
+  }
+
+  #socials{
+    width:100%;
+    height:100px;
+    border:1px solid red;
+
+    i{
+      color:#000;
+    }
+  }
 }
